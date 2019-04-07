@@ -1,0 +1,19 @@
+{
+  "name": "jamestel.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url resources/sass/styles.scss public/css/style.css",
+    "css-compile": "npm run css-build -- --output-style compressed",
+    "css-watch": "npm run css-build -- --watch",
+    "watch": "npm run css-watch"
+  },
+  "author": "jamestel",
+  "license": "ISC"
+}
